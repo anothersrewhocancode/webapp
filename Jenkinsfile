@@ -25,7 +25,7 @@ pipeline{
 
         stage ('publish to nexus') {
           steps {
-            nexusArtifactUploader artifacts: [[artifactId: 'cicdlab', classifier: '', file: 'target/cicdlab-0.0.9.war', type: 'war']], credentialsId: '', groupId: 'com.vigneshdevopssession', nexusUrl: '172.31.28.237:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'artifact-RELEASE', version: '0.0.9'
+            nexusArtifactUploader artifacts: [[artifactId: 'cicdlab', classifier: '', file: 'target/cicdlab-0.0.10.war', type: 'war']], credentialsId: '', groupId: 'com.vigneshdevopssession', nexusUrl: '172.31.28.237:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'artifact-RELEASE', version: '0.0.10'
           }
         }
 
